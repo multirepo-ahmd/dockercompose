@@ -19,11 +19,11 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN}}
+          password: ${{ secrets.ORGANISATION_TOKEN}}
 
       - name: pull the image!
         run:
             docker run  ghcr.io/ahmed-bouzidia/test-customer-api:latest
 
- 
+
 
