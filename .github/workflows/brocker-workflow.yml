@@ -21,12 +21,9 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN}}
 
-      - name: the image!
+      - name: pull the image!
         run:
-            docker run  --name broker ghcr.io/ahmed-bouzidia/test-customer-api
+            docker run  ghcr.io/ahmed-bouzidia/test-customer-api:latest
 
-      - name: Stop container 
-        run:
-            docker stop broker
-
+ 
 
