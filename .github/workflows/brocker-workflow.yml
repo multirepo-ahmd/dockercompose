@@ -22,8 +22,8 @@ jobs:
           password: ${{ secrets.ORGANISATION_TOKEN}}
 
       - name: pull the image!
-        run:
-            docker run  ghcr.io/ahmed-bouzidia/test-customer-api:latest
-
+        run: |
+            docker run --name api  ghcr.io/ahmed-bouzidia/test-customer-api:latest
+            docker stop api
 
 
