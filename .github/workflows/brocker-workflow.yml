@@ -1,8 +1,8 @@
 name: Pull ghcr image and run
 
 on:
-  push:
-    branches: [main]
+  [workflow_dispatch]:
+   
 
 jobs:
   pull_image:
