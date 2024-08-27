@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 jobs:
-  -pull_image:
+  - pull_image:
     runs-on: ubuntu-latest
 
     steps:
