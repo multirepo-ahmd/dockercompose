@@ -18,10 +18,12 @@ jobs:
           username: ahmed-bouzidia
           password: ${{ secrets.TOKEN_DOCKER_REGISTRY }}
 
-      - name: Run the image
-          docker run  --name broker ghcr.io/ahmed-bouzidia/test-customer-api
+      - name: the image!
+        run:
+            docker run  --name broker ghcr.io/ahmed-bouzidia/test-customer-api
 
       - name: Stop container 
-          docker stop broker
+        run:
+            docker stop broker
 
 
